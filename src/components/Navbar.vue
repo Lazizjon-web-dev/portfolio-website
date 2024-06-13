@@ -1,0 +1,76 @@
+<template>
+    <aside id="rightSideBar"
+        class="h-[100%] w-[8%] min-w-20 fixed flex flex-col justify-around items-center top-0 right-0 pt-7">
+        <NavbarButton 
+            v-for="{ iconComponent, strTooltip } in buttons" 
+            :key="strTooltip" 
+            :iconComponent="iconComponent" 
+            :strTooltip="strTooltip"
+        />
+    </aside>
+</template>
+<script setup>
+import NavbarButton from "./NavbarButton.vue";
+import HomeIcon from './icons/HomeIcon.vue';
+import ServicesIcon from './icons/ServicesIcon.vue';
+import CVIcon from './icons/CVIcon.vue';
+import PortfolioIcon from './icons/PortfolioIcon.vue';
+import BlogIcon from './icons/BlogIcon.vue';
+import ContactIcon from './icons/ContactIcon.vue';
+
+const buttons = [
+    {
+        iconComponent: HomeIcon,
+        strTooltip: 'Home',
+    },
+    {
+        iconComponent: ServicesIcon,
+        strTooltip: 'Services',
+    },
+    {
+        iconComponent: CVIcon,
+        strTooltip: 'CV',
+    },
+    {
+        iconComponent: PortfolioIcon,
+        strTooltip: 'Portfolio',
+    },
+    {
+        iconComponent: BlogIcon,
+        strTooltip: 'Blog',
+    },
+    {
+        iconComponent: ContactIcon,
+        strTooltip: 'Contact',
+    },
+]
+</script>
+<style lang="scss" scoped>
+  
+
+/* sidebar.css */
+aside#rightSideBar{
+    background-color:#fafafa;
+
+    &>button:hover .sidebarTooltip{
+        opacity: 1;
+    }
+}
+.sidebarTooltip{
+    //background-color:var(--color12);
+    //background-color: #f00;
+    color:var(--color3);
+
+}
+.sideBarBtn{
+    display:block;
+
+    //background-color: var(--color4);
+    &:hover{
+        //background-color: var(--color2);
+    }
+    &:focus{
+        outline: none;
+    }
+}
+</style>
