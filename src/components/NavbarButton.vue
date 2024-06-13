@@ -10,7 +10,6 @@
     </button>
 </template>
 <script setup>
-import { defineProps } from 'vue';
 const { iconComponent, strTooltip } = defineProps({
     iconComponent: Object,
     strTooltip: String,
