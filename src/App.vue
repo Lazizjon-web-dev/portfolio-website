@@ -1,10 +1,11 @@
 
 <template>
-  <NavigationBarVue/>
+  <NavigationBar/>
+  <router-view></router-view>
 </template>
 
 <script setup>
-import NavigationBarVue from "./components/NavigationBar.vue";
+import NavigationBar from "./components/NavigationBar.vue";
 
 </script>
 
