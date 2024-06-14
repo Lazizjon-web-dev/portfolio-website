@@ -11,12 +11,12 @@
 </template>
 <script setup>
 import NavbarButton from "./NavbarButton.vue";
-import HomeIcon from './icons/HomeIcon.vue';
-import ServicesIcon from './icons/ServicesIcon.vue';
-import CVIcon from './icons/CVIcon.vue';
-import PortfolioIcon from './icons/PortfolioIcon.vue';
-import BlogIcon from './icons/BlogIcon.vue';
-import ContactIcon from './icons/ContactIcon.vue';
+import HomeIcon from './icons/Navbar/HomeIcon.vue';
+import ServicesIcon from './icons/Navbar/ServicesIcon.vue';
+import CVIcon from './icons/Navbar/CVIcon.vue';
+import PortfolioIcon from './icons/Navbar/PortfolioIcon.vue';
+import BlogIcon from './icons/Navbar/BlogIcon.vue';
+import ContactIcon from './icons/Navbar/ContactIcon.vue';
 
 const buttons = [
     {
