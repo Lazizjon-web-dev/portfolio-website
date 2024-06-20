@@ -1,6 +1,6 @@
 <template>
     <aside id="rightSideBar"
-        class="h-[100%] w-[8%] min-w-20 fixed flex flex-col justify-around items-center top-0 right-0 pt-7">
+        class="h-fit w-full fixed flex flex-row justify-around items-center top-0 right-0 left-0 md:pt-7 md:h-[100%] md:w-[8%] md:flex-col md:top-0 md:right-0 md:left-auto z-50">
         <NavbarButton 
             v-for="{ iconComponent, strTooltip } in buttons" 
             :key="strTooltip" 
