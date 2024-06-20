@@ -5,9 +5,6 @@
             class="text-lg font-normal hover:text-amber-400 cursor-pointer">{{ category }}</div>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-4 items-center">
-        <div
-            class="text-7xl h-80 box-border bg-amber-400 text-white text-center py-28 px-2.5 transition-all hover:bg-white hover:text-amber-400">
-            +</div>
         <a v-for="({ thumbnail, link }, i) in Portfolios" :key="i" :href="link">
             <img class=" h-80 w-full border-none m-0 bg-amber-400" :src="thumbnail" />
         </a>
@@ -23,6 +20,10 @@ const Categories = [
 ]
 
 const Portfolios = [
+    {
+        thumbnail: '../src/assets/portfolio-thumbnails/add-portfolio.jpg',
+        link: '#',
+    },
     {
         thumbnail: '../src/assets/portfolio-thumbnails/portfolio1.jpg',
         link: '#',
