@@ -1,7 +1,7 @@
 <template>
-    <div class="extraSkills my-6 mx-auto">
-        <img class="extraSkillsIcon mr-3" src="../assets/icons/CV/icons.svg"/>
-        <span class="extraSkills">{{ name }}</span>
+    <div class="my-6 mx-auto flex">
+        <img class="mr-3" src="https://axios.freewebhostmost.com/images/icons/extra.svg"/>
+        <span>{{ name }}</span>
     </div>
 </template>
 <script setup>
