@@ -10,7 +10,7 @@
         </g>
         <defs>
             <clipPath id="clip0_3_171">
-                <rect width="74" height="74" fill="white" />
+                <rect width="74" height="74" fill="color7" />
             </clipPath>
         </defs>
     </svg>

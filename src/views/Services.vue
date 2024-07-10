@@ -1,11 +1,12 @@
 <template>
+    <div class="pt-20 px-2 pb-3 md:pt-4 box-border">
         <SectionTitle :title="serviceTitle" :description="serviceDescription"/>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-4 w-full">
-            <Service v-for="{ title, description, iconComponent, orderBtn } in Services" :key="title" :title="title"
-                :description="description" :icon="iconComponent" :btn="orderBtn" />
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-4 w-full mb-10">
+            <Service v-for="{ title, description, icon, orderBtn } in Services" :key="title" :title="title"
+                :description="description" :icon="icon" :btn="orderBtn" />
         </div>
         <SectionTitle :title="plansTitle" :description="plansDescription"/>
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-y-4 gap-x-4 align-items-center w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-y-4 gap-x-4 align-items-center w-full mb-10">
             <PricePlan v-for="plan in PricePlans" :key="plan.name" :name="plan.name" :price="plan.price" :title="plan.title"
                 :isPopular="plan.isPopular" :facilities="plan.facilities" :anim="plan.animationClasses" />
         </div>
@@ -14,21 +15,19 @@
             <Recommendation v-for="({ rating, title, description, author }, index) in Recommendations" :key="index"
                 :rating="rating" :title="title" :description="description" :author="author" />
         </div>
+    </div>
 </template>
 <script setup>
 import SectionTitle from '../components/SectionTitle.vue';
-import CodingIcon from "../components/icons/Services/CodingIcon.vue";
-import GameDevelopmentIcon from "../components/icons/Services/GameDevelopmentIcon.vue";
-import IllustrationIcon from "../components/icons/Services/IllustrationIcon.vue";
-import MicrophoneIcon from "../components/icons/Services/MicrophoneIcon.vue";
-import PhotographerIcon from "../components/icons/Services/PhotographerIcon.vue";
+// import CodingIcon from "../components/icons/Services/CodingIcon.vue";
+// import GameDevelopmentIcon from "../components/icons/Services/GameDevelopmentIcon.vue";
+// import IllustrationIcon from "../components/icons/Services/IllustrationIcon.vue";
+// import MicrophoneIcon from "../components/icons/Services/MicrophoneIcon.vue";
+// import PhotographerIcon from "../components/icons/Services/PhotographerIcon.vue";
 import Service from "../components/Service.vue";
 
 import PricePlan from "../components/PricePlan.vue";
-
 import Recommendation from "../components/Recommendation.vue";
-
-import { Slider, Slideritem } from 'vue-concise-slider';
 
 const serviceTitle = 'my services';
 const serviceDescription = 'Discover Our Services: Explore Innovative Solutions and Expertise Tailored Just for You! Our Commitment to Excellence Ensures Optimal Results and Satisfaction Every Time.';
@@ -46,27 +45,27 @@ const Services = [
     {
         title: 'Web development',
         description: 'blog, website, web application',
-        iconComponent: CodingIcon,
+        icon: "https://axios.freewebhostmost.com/images/icons/coding.svg",
     },
     {
         title: 'UX/UI design',
         description: 'mobile app, website design',
-        iconComponent: IllustrationIcon,
+        icon: "https://axios.freewebhostmost.com/images/icons/illustration.svg",
     },
     {
         title: 'Sound design',
         description: 'voice over, beat making',
-        iconComponent: MicrophoneIcon,
+        icon: "https://axios.freewebhostmost.com/images/icons/microphone.svg",
     },
     {
         title: 'Game design',
         description: 'character design, props & objects',
-        iconComponent: GameDevelopmentIcon,
+        icon: "https://axios.freewebhostmost.com/images/icons/game-development.svg",
     },
     {
         title: 'Photography',
         description: 'portrait, product photography',
-        iconComponent: PhotographerIcon,
+        icon: "https://axios.freewebhostmost.com/images/icons/photographer.svg",
     },
     {
         title: 'Advertising',
