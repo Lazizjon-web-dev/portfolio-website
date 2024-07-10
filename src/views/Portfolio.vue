@@ -2,11 +2,11 @@
     <SectionTitle :title="title" :description="description" />
     <div id="portfolioFilter" class="w-full my-4 flex flex-col items-center md:flex-row justify-around self-center">
         <div v-for="(category, i) in Categories" :key="i"
-            class="text-lg font-normal hover:text-amber-400 cursor-pointer">{{ category }}</div>
+            class="text-lg font-normal hover:text-primary cursor-pointer">{{ category }}</div>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-4 items-center">
         <a v-for="({ thumbnail, link }, i) in Portfolios" :key="i" :href="link">
-            <img class=" h-80 w-full border-none m-0 bg-amber-400" :src="thumbnail" />
+            <img class=" h-80 w-full border-none m-0 bg-primary" :src="thumbnail" />
         </a>
     </div>
 </template>
