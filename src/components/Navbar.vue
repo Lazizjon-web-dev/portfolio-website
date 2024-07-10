@@ -1,22 +1,24 @@
 <template>
     <aside id="rightSideBar"
-        class="h-fit w-full fixed flex flex-row justify-around items-center top-0 right-0 left-0 md:pt-7 md:h-[100%] md:w-[8%] md:flex-col md:top-0 md:right-0 md:left-auto z-50">
+        class="bg-color8 h-fit w-full box-border fixed flex flex-row justify-around items-center top-0 right-0 left-0 md:pt-7 md:h-[100%] md:w-[8%] md:flex-col md:top-0 md:right-0 md:left-auto z-50">
+        <ThemeSwitcher/>
         <NavbarButton 
             v-for="{ iconComponent, strTooltip } in buttons" 
             :key="strTooltip" 
-            :iconComponent="iconComponent" 
-            :strTooltip="strTooltip"
+            :Icon="iconComponent" 
+            :tooltip="strTooltip"
         />
     </aside>
 </template>
 <script setup>
+import ThemeSwitcher from "./ThemeSwitcher.vue";
 import NavbarButton from "./NavbarButton.vue";
-import HomeIcon from './icons/Navbar/HomeIcon.vue';
-import ServicesIcon from './icons/Navbar/ServicesIcon.vue';
-import CVIcon from './icons/Navbar/CVIcon.vue';
-import PortfolioIcon from './icons/Navbar/PortfolioIcon.vue';
-import BlogIcon from './icons/Navbar/BlogIcon.vue';
-import ContactIcon from './icons/Navbar/ContactIcon.vue';
+import HomeIcon from './icons/Navbar/IconHome.vue';
+import ServicesIcon from './icons/Navbar/IconServices.vue';
+import CVIcon from './icons/Navbar/IconCV.vue';
+import PortfolioIcon from './icons/Navbar/IconPortfolio.vue';
+import BlogIcon from './icons/Navbar/IconBlog.vue';
+import ContactIcon from './icons/Navbar/IconContact.vue';
 
 const buttons = [
     {
@@ -50,7 +52,6 @@ const buttons = [
 
 /* sidebar.css */
 aside#rightSideBar{
-    background-color:#fafafa;
 
     &>button:hover .sidebarTooltip{
         opacity: 1;
