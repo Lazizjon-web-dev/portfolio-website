@@ -21,28 +21,21 @@ const description = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. R
 const Posts = [
     {
         id: 1,
-        thumbnail:'../src/assets/portfolio-thumbnails/responsive-website.jpg',
+        thumbnail:'https://axios.freewebhostmost.com/images/portfolio%20thumbnails/Home-working.jpg',
         title: 'How to make web templates',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eaque praesentium voluptate nam dolores aut.',
         link:'',
     },
     {
-        id: 1,
-        thumbnail:'../src/assets/portfolio-thumbnails/responsive-website.jpg',
+        id: 2,
+        thumbnail:'https://axios.freewebhostmost.com/images/portfolio%20thumbnails/responsive-website.jpg',
         title: 'How to make web templates',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eaque praesentium voluptate nam dolores aut.',
         link:'',
     },
     {
-        id: 1,
-        thumbnail:'../src/assets/portfolio-thumbnails/responsive-website.jpg',
-        title: 'How to make web templates',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eaque praesentium voluptate nam dolores aut.',
-        link:'',
-    },
-    {
-        id: 1,
-        thumbnail:'../src/assets/portfolio-thumbnails/responsive-website.jpg',
+        id: 3,
+        thumbnail:'https://axios.freewebhostmost.com/images/portfolio%20thumbnails/flyer-design.jpg',
         title: 'How to make web templates',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eaque praesentium voluptate nam dolores aut.',
         link:'',

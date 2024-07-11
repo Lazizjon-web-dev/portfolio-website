@@ -19,11 +19,11 @@
 </template>
 <script setup>
 import SectionTitle from '../components/SectionTitle.vue';
-// import CodingIcon from "../components/icons/Services/CodingIcon.vue";
-// import GameDevelopmentIcon from "../components/icons/Services/GameDevelopmentIcon.vue";
-// import IllustrationIcon from "../components/icons/Services/IllustrationIcon.vue";
-// import MicrophoneIcon from "../components/icons/Services/MicrophoneIcon.vue";
-// import PhotographerIcon from "../components/icons/Services/PhotographerIcon.vue";
+import IconCoding from "../components/icons/Services/IconCoding.vue";
+import IconGameDev from "../components/icons/Services/IconGameDev.vue";
+import IconIllustration from "../components/icons/Services/IconIllustration.vue";
+import IconMicrophone from "../components/icons/Services/IconMicrophone.vue";
+import IconPhotographer from "../components/icons/Services/IconPhotographer.vue";
 import Service from "../components/Service.vue";
 
 import PricePlan from "../components/PricePlan.vue";
@@ -45,27 +45,27 @@ const Services = [
     {
         title: 'Web development',
         description: 'blog, website, web application',
-        icon: "https://axios.freewebhostmost.com/images/icons/coding.svg",
+        icon: IconCoding,//"https://axios.freewebhostmost.com/images/icons/coding.svg",
     },
     {
         title: 'UX/UI design',
         description: 'mobile app, website design',
-        icon: "https://axios.freewebhostmost.com/images/icons/illustration.svg",
+        icon: IconIllustration,//"https://axios.freewebhostmost.com/images/icons/illustration.svg",
     },
     {
         title: 'Sound design',
         description: 'voice over, beat making',
-        icon: "https://axios.freewebhostmost.com/images/icons/microphone.svg",
+        icon: IconMicrophone,//"https://axios.freewebhostmost.com/images/icons/microphone.svg",
     },
     {
         title: 'Game design',
         description: 'character design, props & objects',
-        icon: "https://axios.freewebhostmost.com/images/icons/game-development.svg",
+        icon: IconGameDev,//"https://axios.freewebhostmost.com/images/icons/game-development.svg",
     },
     {
         title: 'Photography',
         description: 'portrait, product photography',
-        icon: "https://axios.freewebhostmost.com/images/icons/photographer.svg",
+        icon: IconPhotographer,//"https://axios.freewebhostmost.com/images/icons/photographer.svg",
     },
     {
         title: 'Advertising',
@@ -139,7 +139,7 @@ const Recommendations = [
         description: "Working with Lazizjon was fantastic. Top-notch front-end development, highly recommend!",
         author: {
             name: "John Anderson",
-            icon: "../src/assets/icons/recommendation/JohnAnderson.png",
+            icon: "https://axios.freewebhostmost.com/images/icons/recommendation/JohnAnderson.png",
             profession: "Marketing Manager"
         }
     },
@@ -149,7 +149,7 @@ const Recommendations = [
         description: "Lazizjon transformed our website beautifully. Great user experience improvements!",
         author: {
             name: "Sarah Martinez",
-            icon: "../src/assets/icons/recommendation/SarahMartinez.png",
+            icon: "https://axios.freewebhostmost.com/images/icons/recommendation/SarahMartinez.png",
             profession: "CEO at Creative Solutions"
         }
     },
@@ -159,7 +159,7 @@ const Recommendations = [
         description: "Lazizjon's expertise in front-end development is evident in their high-quality work.",
         author: {
             name: "Michael Brown",
-            icon:"../src/assets/icons/recommendation/MichaelBrown.png",
+            icon:"https://axios.freewebhostmost.com/images/icons/recommendation/MichaelBrown.png",
             profession: "Project Manager at Tech Innovations"
         }
     },
@@ -169,7 +169,7 @@ const Recommendations = [
         description: "Lazizjon enhanced our site's usability and aesthetics significantly. Very satisfied!",
         author: {
             name: "Emily Johnson",
-            icon:"../src/assets/icons/recommendation/EmilyJohnson.png",
+            icon:"https://axios.freewebhostmost.com/images/icons/recommendation/EmilyJohnson.png",
             profession: "Founder of Eco-Friendly Living"
         }
     }, */
@@ -179,7 +179,7 @@ const Recommendations = [
         description: "Lazizjon is reliable and talented, delivering high-quality work consistently.",
         author: {
             name: "David Lee",
-            icon: "../src/assets/icons/recommendation/DavidLee.png",
+            icon: "https://axios.freewebhostmost.com/images/icons/recommendation/DavidLee.png",
             profession: "CTO at Smart Solutions Inc."
         }
     },
@@ -189,7 +189,7 @@ const Recommendations = [
         description: "Lazizjon's attention to detail is remarkable. Final product was stunning and functional.",
         author: {
             name: "Jessica Roberts",
-            icon: "../src/assets/icons/recommendation/JessicaRoberts.png",
+            icon: "https://axios.freewebhostmost.com/images/icons/recommendation/JessicaRoberts.png",
             profession: "Product Manager at HealthTech"
         }
     },
@@ -199,7 +199,7 @@ const Recommendations = [
         description: "Lazizjon redesigned our site beautifully. Fast, user-friendly, and great feedback from clients!",
         author: {
             name: "Daniel Wilson",
-            icon: "../src/assets/icons/recommendation/DanielWilson.png",
+            icon: "https://axios.freewebhostmost.com/images/icons/recommendation/DanielWilson.png",
             profession: "Owner of Wilson & Co."
         }
     },
@@ -209,7 +209,7 @@ const Recommendations = [
         description: "Lazizjon provided excellent front-end development. Our website looks amazing and functions perfectly.",
         author: {
             name: "Aisha Khan",
-            icon: "../src/assets/icons/recommendation/AishaKhan.png",
+            icon: "https://axios.freewebhostmost.com/images/icons/recommendation/AishaKhan.png",
             profession: "Owner of Halal Delights"
         }
     }

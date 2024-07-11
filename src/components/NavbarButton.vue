@@ -1,14 +1,12 @@
 <template>
-    <router-link :to="{name:strTooltip}" class="sideBarBtn group  hover:scale-105 bg-gray-100 box-border hover:bg-amber-400 border-none rounded-full relative h-12 w-12 my-3 md:m-3 p-4 transition-all focus:outline-none">
-        <a class='flex justify-center items-center'>
-            <div class="bg-gray-600 p-2 absolute text-white text-base tracking-wider font-medium translate-y-14 md:-translate-y-14  opacity-0 group-hover:opacity-100 pointer-events-none transition-all rounded-md focus:outline-none ">{{ strTooltip }}</div>
-            <iconComponent  class=" fill-gray-500 group-hover:fill-gray-900 transition-all"/>
-        </a>
+    <router-link :to="{name:tooltip}" class="flex justify-center items-center h-12 w-12 box-border border-none rounded-full my-3 md:m-3 p-auto relative bg-gray-100 transition-all group hover:bg-primary hover:scale-105 focus:outline-none">
+        <div class="bg-gray-600 p-2 absolute text-color7 text-base tracking-wider font-medium translate-y-14 md:-translate-y-14  opacity-0 pointer-events-none transition-all rounded-md group-hover:opacity-100 focus:outline-none ">{{ tooltip }}</div>
+        <Icon class=" fill-color5 group-hover:fill-color1 transition-all"/>
     </router-link>
 </template>
 <script setup>
-const { iconComponent, strTooltip } = defineProps({
-    iconComponent: Object,
-    strTooltip: String,
+const { Icon, tooltip } = defineProps({
+    Icon: Object,
+    tooltip: String,
 })
 </script>

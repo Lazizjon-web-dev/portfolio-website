@@ -1,7 +1,7 @@
 <template>
     <div class="w-full flex flex-col md:flex-row justify-between mx-4">
         <div class="box-border basis-3/5">
-            <div class="inline-block m-5 mt-8 text-4xl font-bold capitalize text-center">send us your information</div>
+            <div class="inline-block m-5 mt-8 text-color1 text-4xl font-bold capitalize text-center">send us your information</div>
             <form action="#" class="bg-color8 box-border mr-4 p-6 mb-0 h-full">
                 <ContactInput v-for="(input,i) in inputForms" 
                     :key="i"
@@ -15,8 +15,8 @@
             </form>
         </div>
         <div class="basis-2/5">
-            <div class="m-5 mt-8 text-4xl font-bold capitalize text-center"> my contact info</div>
-            <div class="w-full h-full flex flex-col justify-between bg-gray-200">
+            <div class="m-5 mt-8 text-color1 text-4xl font-bold capitalize text-center"> my contact info</div>
+            <div class="w-full h-full flex flex-col justify-between bg-background">
                 <ContactCard v-for="({icon,contactInfos},i) in ContactFields" :key="i" :icon="icon" :contact-infos="contactInfos"/>
             </div>
         </div>

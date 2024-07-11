@@ -2,7 +2,7 @@
     <SectionTitle :title="title" :description="description" />
     <div id="portfolioFilter" class="w-full my-4 flex flex-col items-center md:flex-row justify-around self-center">
         <div v-for="(category, i) in Categories" :key="i"
-            class="text-lg font-normal hover:text-primary cursor-pointer">{{ category }}</div>
+            class="text-color1 text-lg font-normal hover:text-primary cursor-pointer">{{ category }}</div>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-4 items-center">
         <a v-for="({ thumbnail, link }, i) in Portfolios" :key="i" :href="link">
@@ -21,38 +21,38 @@ const Categories = [
 
 const Portfolios = [
     {
-        thumbnail: '../src/assets/portfolio-thumbnails/add-portfolio.jpg',
+        thumbnail: 'https://axios.freewebhostmost.com/images/portfolio%20thumbnails/add-portfolio.jpg',
         link: '#',
     },
     {
-        thumbnail: '../src/assets/portfolio-thumbnails/portfolio1.jpg',
+        thumbnail: 'https://axios.freewebhostmost.com/images/portfolio%20thumbnails/portfolio1.jpg',
         link: '#',
     },
     {
-        thumbnail: '../src/assets/portfolio-thumbnails/portfolio2.jpg',
+        thumbnail: 'https://axios.freewebhostmost.com/images/portfolio%20thumbnails/portfolio2.jpg',
         link: '#',
     },
     {
-        thumbnail: '../src/assets/portfolio-thumbnails/portfolio3.jpg',
+        thumbnail: 'https://axios.freewebhostmost.com/images/portfolio%20thumbnails/portfolio3.jpg',
         link: '#',
     },
     {
-        thumbnail: '../src/assets/portfolio-thumbnails/portfolio4.jpg',
+        thumbnail: 'https://axios.freewebhostmost.com/images/portfolio%20thumbnails/portfolio4.jpg',
         link: '#',
     },
     {
-        thumbnail: '../src/assets/portfolio-thumbnails/portfolio5.jpg',
+        thumbnail: 'https://axios.freewebhostmost.com/images/portfolio%20thumbnails/portfolio5.jpg',
         link: '#',
     }, {
-        thumbnail: '../src/assets/portfolio-thumbnails/portfolio6.jpg',
+        thumbnail: 'https://axios.freewebhostmost.com/images/portfolio%20thumbnails/portfolio6.jpg',
         link: '#',
     },
     {
-        thumbnail: '../src/assets/portfolio-thumbnails/portfolio7.jpg',
+        thumbnail: 'https://axios.freewebhostmost.com/images/portfolio%20thumbnails/portfolio7.jpg',
         link: '#',
     },
     {
-        thumbnail: '../src/assets/portfolio-thumbnails/portfolio8.jpg',
+        thumbnail: 'https://axios.freewebhostmost.com/images/portfolio%20thumbnails/portfolio8.jpg',
         link: '#',
     },
 

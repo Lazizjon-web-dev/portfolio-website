@@ -1,6 +1,6 @@
 <template>
     <SectionTitle :title="educationTitle" :description="educationDescription"/>
-    <div class="flex flex-col justify-between bg-white">
+    <div class="flex flex-col justify-between bg-background">
         <CVComponent v-for="(edu,i) in Educations"
             :key="i"
             :title="edu.title" 
@@ -12,7 +12,7 @@
         />
     </div>
     <SectionTitle :title="workTitle" :description="workDescription"/>
-    <div class="w-full flex flex-col justify-between bg-white mb-20">
+    <div class="w-full flex flex-col justify-between bg-background mb-20">
         <CVComponent v-for="(exp,i) in Experiences"
             :key="i"
             :title="exp.title" 
@@ -39,7 +39,7 @@ const Educations = [
         certificate:'certificate of web training',
         description:'Eos laudantium necessitatibus molestias magnam, sequi aliquam reiciendis fuga quod accusantium. Deleniti, sed alias ipsam perferendis maiores ipsum! Sapiente non nemo tempora nulla iusto voluptatibus. Nam nisi ipsa dolor incidunt.',
         role:'student',
-        startDate:'may 2023',
+        startDate:'may 2024',
         endDate:'may 2023',
     },
     {

@@ -1,19 +1,19 @@
 <template>
-  <div class="recomendationsCard">
-    <div class="rating">
-        <IconStar v-for="(e, i) in new Array(rating)" :key='i' class="fill-primary inline"/>
+  <div class="h-80 min-w-80 bg-color8 p-7 shadow transition-all cursor-pointer duration-500 hover:scale-105 hover:shadow-xl">
+    <div>
+        <IconStar v-for="(e, i) in new Array(rating)" :key='i' class="fill-primary inline-block my-2.5 mx-0.5"/>
     </div>
-    <div class="recomendationStatus">{{ title }}</div>
-    <div class="recomendationComment">
+    <div class="mt-2.5 text-color1 text-xl font-semibold">{{ title }}</div>
+    <div class="my-7 mx-1 text-color5 text-base">
       {{ description }}
     </div>
     <div class="flex flex-row">
-      <div class="recomendationImageDiv">
-        <img class="recomendationImage" :src="author.icon"/>
+      <div class="flex-1">
+        <img class="block h-20 w-20 my-2.5 mx-auto rounded-full" :src="author.icon"/>
       </div>
-      <div class="recomendationInfo">
-        <div class="recomendationName">{{ author.name}}</div>
-        <div class="recomendationProfession">{{ author.profession}}</div>
+      <div class="flex-[2]">
+          <div class="mt-6 text-color1 text-lg font-medium">{{ author.name}}</div>
+        <div class="mt-3 text-color5">{{ author.profession}}</div>
       </div>
     </div>
   </div>
@@ -27,63 +27,3 @@ const {rating, title, description, author } = defineProps({
     author: Object,
 })
 </script>
-<style lang="css">
-
-.recomendationsCard{
-    height:320px;
-    min-width:310px;
-    background-color: var(--color-color7);
-    padding: 30px;
-}
-.ratingStars{
-    margin:10px 2px;
-}
-.recomendationStatus{
-    font-size: 20px;
-    margin-top:10px;
-    font-weight: 600;
-}
-.recomendationComment{
-    font-size:16px;
-    color:var(--color11);
-    margin:28px 5px;
-}
-.recomendationImageDiv{
-    flex:1;
-}
-.recomendationImage{
-    display: block;
-    height: 80px;
-    width:80px;
-    margin: 10px auto;
-    border-radius:50%;
-}
-.recomendationInfo{
-    flex:2;
-}
-.recomendationName{
-    font-size:18px;
-    margin-top:25px;
-    font-weight:500;
-}
-.recomendationProfession{
-    color: var(--color9);
-    margin-top:12px;
-    font-size:14px;
-}
-#threeDots{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: middle;
-    margin:20px auto;
-}
-.dots{
-    height:12px;
-    width:12px;
-    border-radius:50%;
-    background-color: var(--color2);
-    margin:10px;
-}
-
-</style>

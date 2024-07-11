@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="text-color1">
         <label class="block text-color5 text-xl font-bold capitalize">
             {{ label + (isRequired ? " (Required)" : "") }}
         </label>
